@@ -1,5 +1,5 @@
 ﻿
-Partial Class details
+Partial Class Details
     Inherits System.Web.UI.Page
 
 End Class

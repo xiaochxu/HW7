@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" CodeFile="f1.master.vb" Inherits="f1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        
+        <div id="header">
+        <h1>Formula 1</h1>
+        <h3>Know more about Famous Drivers!</h3>
+       </div>
+
+        <div id="right_header">
+            &nbsp;<asp:Image ID="logo" runat="server" Height="150px" ImageUrl="~/css/f1.jpg" />
+
+        </div>
+
+       <div id="menu">
+           <ul id="nav">
+               <li> <asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+               <li><asp:HyperLink ID="link_All" runat="server" NavigateUrl="~/All.aspx">View All Drivers</asp:HyperLink></li>
+               <li><asp:HyperLink ID="Hyper_search" runat="server" NavigateUrl="~/Search.aspx">Search</asp:HyperLink></li>
+               <li><asp:HyperLink ID="Hyper_contact" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink></li>
+               <li><asp:HyperLink ID="Hyper_About" runat="server" NavigateUrl="~/about.aspx">About Us</asp:HyperLink></li>
+               <li><asp:HyperLink ID="Hyper_Admin" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
+               <li><asp:HyperLink ID="Hyper_login" runat="server" NavigateUrl="~/login/login.aspx">Login In</asp:HyperLink></li>
+
+              
+           </ul>
+       </div>
+
+        <div class="date">
+
+            Today's date is:<asp:Label ID="lbl_time" runat="server" ><%= String.Format("{0:d}",DateTime.Now )%></asp:Label> 
+        </div>
+         
+            <br /> 
+      
+            
+      <div id="main">
+          <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">   
+          
+        </asp:ContentPlaceHolder>
+            </div>
+            
+        
+          
+        </div>
+
+        <div id="footer">
+                &copy; 2014 MSCI:3300 - Software Design and Development 
+        </div> 
+
+  
+    </form>
+</body>
+</html>

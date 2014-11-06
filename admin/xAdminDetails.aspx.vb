@@ -6,12 +6,12 @@ Partial Class details
 
         Dim deletedname As String = e.Values("name").ToString()
         lbl_deletedname.text = deletedname & " has been deletd from the databse "
-        Response.AddHeader("REFRESH", "3;URL=./default.aspx")
+        Response.AddHeader("REFRESH", "3;URL=./adminAll.aspx")
 
     End Sub
 
     Protected Sub FormView1_ItemUpdated(sender As Object, e As FormViewUpdatedEventArgs) Handles FormView1.ItemUpdated
-        Response.AddHeader("REPRESH", "3;URL=./default.aspx")
+        Response.AddHeader("REPRESH", "3;URL=./AdminAll.aspx")
     End Sub
 
 

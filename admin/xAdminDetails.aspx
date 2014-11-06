@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="details.aspx.vb" Inherits="details" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="xAdminDetails.aspx.vb" Inherits="details" %>
 
 <!DOCTYPE html>
 
@@ -46,20 +46,27 @@
                    <tr>
                        <td>Name:</td>
                        <td><asp:TextBox ID="name_TextBox" runat="server" Text='<%# Bind("name") %>' /></td>
+                       <td><asp:RequiredFieldValidator ID="rfv_name" runat="server" ErrorMessage="Please Enter Information" ControlToValidate="name_TextBox"></asp:RequiredFieldValidator></td>
+                       
                    </tr>
                      <tr>
                        <td>Nationality:</td>
                        <td><asp:TextBox ID="nationality_TextBox" runat="server" Text='<%# Bind("nationality") %>' /></td>
+                       <td><asp:RequiredFieldValidator ID="rfv_nationality" runat="server" ErrorMessage="Please Enter Information" ControlToValidate="nationality_TextBox"></asp:RequiredFieldValidator></td>
+
                    </tr>
 
                     <tr>
                        <td>Team Name:</td>
                        <td><asp:TextBox ID="team_name_TextBox" runat="server" Text='<%# Bind("team_name") %>' /></td>
+                       <td><asp:RequiredFieldValidator ID="rfv_team" runat="server" ErrorMessage="Please Enter Information" ControlToValidate="team_name_TextBox"></asp:RequiredFieldValidator></td>
+
                    </tr>
 
                      <tr>
                        <td>Date of Birth:</td>
                        <td><asp:TextBox ID="date_of_birth_TextBox" runat="server" Text='<%# Bind("date_of_birth") %>' /></td>
+                       <td><asp:RequiredFieldValidator ID="rfv_birth" runat="server" ErrorMessage="Please Enter Information" ControlToValidate="date_of_birth_TextBox"></asp:RequiredFieldValidator></td>
                    </tr>
 
                     <tr>
@@ -91,20 +98,26 @@
                    <tr>
                        <td>Name:</td>
                        <td><asp:Label ID="nameLabel" runat="server" Text='<%# Bind("name") %>' /></td>
+                     
+
                    </tr>
                      <tr>
                        <td>Nationality:</td>
                        <td><asp:label ID="nationalityLabel" runat="server" Text='<%# Bind("nationality") %>' /></td>
+                      
+
                    </tr>
 
                     <tr>
                        <td>Team Name:</td>
                        <td><asp:Label ID="team_nameLabel" runat="server" Text='<%# Bind("team_name")%>' /></td>
+                       
                    </tr>
 
                      <tr>
                        <td>Date of Birth:</td>
                        <td><asp:Label ID="date_of_birthLabel" runat="server" Text='<%# Bind("date_of_birth") %>' /></td>
+                       
                    </tr>
 
                     <tr>
