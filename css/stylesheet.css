@@ -1,0 +1,110 @@
+﻿.password{color:red;}
+
+h1 {font-family:Georgia, serif;}
+h3 {font-family:Arial, Helvetica, sans-serif serif;font-variant:small-caps;}
+
+#container {background-color:lightgrey;
+            padding:20px;
+            margin:0 auto;
+            border:1px solid black;
+            width:900px;
+}
+
+#header {background-color:pink;
+         color:black;
+         padding:10px;
+         margin:0 auto;
+         width:642px;
+         height:150px;
+         float:left;
+         border-top:1px solid black;
+          border-left:1px solid black;
+          border-bottom:1px solid black;
+          text-align:center;
+}
+
+#right_header {background-color:pink;
+               padding:10px;
+               margin:0 auto;
+               height:150px;
+               float:left;
+                border-top:1px solid black;
+          border-right:1px solid black;
+          border-bottom:1px solid black;
+    width: 215px;
+}
+
+#main {background-color:white;
+       color:black;
+       padding:10px;
+       margin:0 auto;
+      
+     
+}
+
+#footer {background-color:green;
+         color:white;
+         text-align:center;
+}
+
+
+#nav{ width:898px;
+      float:left;
+      margin:0 0 3em 0;
+      padding:0;
+      list-style:none;
+      background-color:#f2f2f2;
+      border:1px solid black;
+
+}
+#nav li {float:left;}
+
+#nav li a {display:block;
+           padding:8px 15px;
+           text-decoration:none;
+           font-weight:bold;
+           color:#069;
+           border-right:1px solid #ccc;
+
+}
+
+#nav li a:hover{color:#c00;background-color:#fff;}
+
+.center_img {display:block;
+             margin-left:auto;
+             margin-right:auto;
+}
+
+.deleted{color:red;font-style:italic;}
+.validationError{color:red;font-weight:bold; text-align:left;}
+
+.about {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Times New Roman';
+   }
+
+.email{text-align:center;
+       font-size: 16px;
+       font-family: 'Times New Roman';color:#069;font-weight:bold;}
+
+.login{margin-left:auto;margin-right:auto;}
+
+.cssgridview {
+    
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    margin-left:auto;
+    margin-right:auto;   
+    border: 1px solid black;
+} 
+
+.cssgridview td { padding:10px; border:solid 1px #FFFFFF;background:#CCFFFF;color:black;font-size:14px;border:solid 1px black;}
+.cssgridview th {padding:10px; color:#696969;background:#FFFF99; font-size:16px;border:solid 1px black; }
+
+.title{height:auto;width:130px;text-align:right;font-size:14px;font-family:"Comic Sans MS";background-color:#ffff99;border:solid 1px black;padding:10PX;}
+.cell {height:auto;width:auto;background-color:#CCFFFF;padding:10PX;text-align:left;border:solid 1px black;}
+.cssformview{margin-left:auto; margin-right:auto; }
+.date{text-align:center;}
+.search{text-align:center; font-size:14px;}
