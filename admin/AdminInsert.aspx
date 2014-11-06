@@ -29,51 +29,51 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="Sql_insert" DefaultMode="Insert">
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="Sql_insert" DefaultMode="Insert"  CssClass="cssformview">
            
            
             <InsertItemTemplate>
                 <table>
                    
                    <tr>
-                       <td class="title">Name:</td>
+                       <td class="title">*Name:</td>
                        <td class="cell"><asp:TextBox ID="name_TextBox" runat="server" Text='<%# Bind("name") %>' /></td>
-                       <td>
+                       <td class="validationError">
                            <asp:RequiredFieldValidator ID="rfv_name" runat="server" ErrorMessage="  *Please Enter Information!" ControlToValidate="name_TextBox"></asp:RequiredFieldValidator>
                           </td>
                        
                    </tr>
                      <tr>
-                       <td class="title">Nationality:</td>
+                       <td class="title">*Nationality:</td>
                        <td class="cell"><asp:TextBox ID="nationality_TextBox" runat="server" Text='<%# Bind("nationality") %>' /></td>
-                       <td>
+                       <td class="validationError">
                            <asp:RequiredFieldValidator ID="rfv_nationality" runat="server" ErrorMessage="  *Please Enter Information!" ControlToValidate="nationality_TextBox"></asp:RequiredFieldValidator>
                          </td>
                    </tr>
 
                     <tr>
-                       <td class="title">Team Name:</td>
+                       <td class="title">*Team Name:</td>
                        <td  class="cell"><asp:TextBox ID="team_name_TextBox" runat="server" Text='<%# Bind("team_name") %>' /></td>
-                        <td>
+                        <td class="validationError">
                             <asp:RequiredFieldValidator ID="rfv_team_name" runat="server" ErrorMessage="  *Please Enter Information!" ControlToValidate="team_name_TextBox"></asp:RequiredFieldValidator>
                         </td>
                    </tr>
 
                      <tr>
-                       <td class="title">Date of Birth:</td>
+                       <td class="title">*Date of Birth:</td>
                        <td  class="cell"><asp:TextBox ID="date_of_birth_TextBox" runat="server" Text='<%# Bind("date_of_birth") %>' /></td>
-                       <td>
-                           <asp:RequiredFieldValidator ID="rfv_date" runat="server" ErrorMessage="  *Please Enter Information!" ControlToValidate="date_of_birth_TextBox"></asp:RequiredFieldValidator>
+                       <td class="validationError">
+                           <asp:RequiredFieldValidator ID="rfv_date" runat="server" ErrorMessage="  *Please Enter Valid Number" ControlToValidate="date_of_birth_TextBox"></asp:RequiredFieldValidator>
                          </td>
                    </tr>
 
                    <tr>
-                       <td class="title">Highest Race Finish:</td>
+                       <td class="title">Highest Race Finish (number):</td>
                        <td  class="cell"><asp:TextBox ID="highest_race_finish_TextBox" runat="server" Text='<%# Bind("highest_race_finish") %>' /></td>
                    </tr>
 
                    <tr>
-                       <td class="title">Highest Grid Position:</td>
+                       <td class="title">Highest Grid Position (number):</td>
                        <td  class="cell"> <asp:TextBox ID="highest_grid_position_TextBox" runat="server" Text='<%# Bind("highest_grid_position") %>' /></td>
                    </tr>
 

@@ -1,6 +1,6 @@
-﻿Partial Class admin_AdminDetails
+﻿
+Partial Class admin_AdminDetails
     Inherits System.Web.UI.Page
-
     Protected Sub FormView1_ItemDeleted(sender As Object, e As FormViewDeletedEventArgs) Handles FormView1.ItemDeleted
 
         Dim deletedname As String = e.Values("name").ToString()

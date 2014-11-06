@@ -29,8 +29,14 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+     <div class="search">
+            Search for a driver by name:
+            <asp:TextBox ID="tbTool" runat="server"></asp:TextBox>
+        </div>
         <br />
-        <asp:GridView ID="GridView1"  cssClass="cssgridview" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Sql_default">
+        <br />
+
+        <asp:GridView ID="GridView1"  cssClass="cssgridview" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="Sql_default" AllowSorting="True">
             <Columns>
                 <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
                 <asp:BoundField DataField="nationality" HeaderText="Nationality" SortExpression="nationality" />

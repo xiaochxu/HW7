@@ -33,9 +33,7 @@
                <li><asp:HyperLink ID="Hyper_contact" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink></li>
                <li><asp:HyperLink ID="Hyper_About" runat="server" NavigateUrl="~/about.aspx">About Us</asp:HyperLink></li>
                <li><asp:HyperLink ID="Hyper_Admin" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
-               <li><asp:HyperLink ID="Hyper_login" runat="server" NavigateUrl="~/login/login.aspx">Login In</asp:HyperLink></li>
-
-              
+               <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
            </ul>
        </div>
 
